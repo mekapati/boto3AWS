@@ -1,3 +1,4 @@
+# copying single object from one bucket to other bucket 
 import boto3 
 
 # Creating S3 Resource From the boto3
@@ -16,6 +17,8 @@ bucket = s3.Bucket('gnvsai.zemosodiagnostics.gq')
 bucket.copy(copy_source, 'replaceEC2.yaml')  
 
 
+
+# copying all objects from one bucket to other bucket 
 import boto3 
 
 # create a S3 resource
